@@ -1,0 +1,141 @@
+header {
+	position: sticky;
+	top: 0;
+	background: rgb(249, 250, 249);
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 20px 0 black;
+    padding: 1.1em;
+}
+ 
+.logo{
+    align-content: center;
+    padding-left: 1em;
+            
+    }
+
+/* Header*/
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    align-items: flex-end;
+    font-size: 0.8em; 
+    font-weight:lighter;
+    background-color: gray;
+    gap: .7em;
+    list-style-type:none;
+    padding: 0.625em;
+    
+        &__enlace {
+        padding: .7em;
+        text-decoration: none;
+        color: rgb(8, 7, 0); 
+        gap: 1em;
+        &:hover {
+            transform: 2px;
+            color: whitesmoke;
+            transition: 2s;
+            }
+        }
+    }
+
+
+.menu__sm{
+    display: none;
+    font-size: 1.3em;
+}
+
+.menu__md{
+    display: flex;
+    gap:1em;
+
+    li{
+        list-style: none;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    
+    .menu__sm{
+        display: block;
+    }
+
+    .menu__md{
+        display:none;
+    }
+
+    input[type=checkbox]:checked ~ .menu__md {
+		position: absolute;
+		top: 100%;
+		right: 0;
+	    left: 0;
+	    height: calc(80vh - 40px);
+		display: flex;
+		flex-flow: column;
+		align-items: flex-end;
+		gap: 1em;
+	    background: grey;
+	    padding: 1em;
+        margin-left: 12em;
+	    border-bottom-left-radius: 0.5em;
+	    animation: scale-in-ver-top 300ms both;
+        font-size: 0.8em;
+	 
+	}
+	
+	@keyframes scale-in-ver-top {
+        0% {
+            transform: scaleY(0);
+            transform-origin: top;
+            opacity: 0;
+        }
+        100% {
+            transform: scaleY(1);
+            transform-origin: top;
+            opacity: 1;
+        }
+    }
+}
+
+/*Footer*/
+
+.container__redes  ul, li, a {
+    font-weight: bolder;
+    text-decoration:none;
+    margin-right:.2em;
+    color:black;
+    font-size: 1.2em;
+    gap: .5em;
+    display: inline;
+    }
+
+    
+
+@media only screen and (max-width: 450px) {
+
+    .container__redes{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+        gap: 0.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 0.5em;
+        
+    }
+} 
+
+.contenedorRedes{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background: grey;
+}

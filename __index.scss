@@ -1,0 +1,186 @@
+.hero__container{
+    display: flex;
+    flex-direction:column;
+    flex-flow: wrap;
+    align-items: center;
+    background: url(/imagenes/fondohero.jpg) no-repeat center / cover;
+    height: 40vh;
+}
+
+.index{
+    display: flex;
+    flex-direction: column;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    margin:1em;
+    padding: 1em;
+}
+
+.quienessomos{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content:stretch;
+    font-weight: bold;
+    font-size: 2.5em;
+
+    &__resaltadas{
+        color:black;
+        font-weight: bolder;
+        font-size: 2em;
+    }
+   
+    &__parrafo{
+        text-align:left;
+        align-content:left;
+        align-items: left;
+        max-width: 70%;
+        color: rgb(1, 6, 12);
+        font-weight:normal;
+    
+
+    }
+}
+
+.razones{
+    display: flex;
+    flex-direction:column;
+    flex-flow: wrap;
+    justify-content:center;
+    margin: 1em;
+    padding: 0.5em;
+    box-shadow: 0 10px 25px -10px black;
+
+    &__titulo{
+        font-size: 2.2em;
+        color: indigo;
+        padding-right: 0.4em;
+    }
+    &__lista{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        font-size: 1.2em;
+        align-items:center;
+        text-align: center;
+    
+    }
+}
+
+.container__cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0.8em;
+    padding: 0.3em;
+    
+}
+
+//Tarjeta*//*
+.contenedor__principal{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+.card{
+    margin:1em;
+    padding: 2em;
+    display:flex;
+    flex-flow: column;
+    border-radius: 0.3em;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -10px black;
+    transition: 300ms ease-in-out;
+    max-width: 31.25rem;
+    max-height: 25rem;
+    align-items: center;
+    &__:hover {
+        transform: scale(1.05);
+	    box-shadow: 0 15px 35px -10px black;
+    }
+
+    &__img1{
+        width: 100%;
+        flex-basis: 12.5rem;
+        background: url(/imagenes/desarrolloweb.jpg) no-repeat center / cover;
+        margin: 0.4em;
+    }
+
+    &__img2{
+        width: 100%;
+        flex-basis:12.5rem;
+        background: url(/imagenes/comercialindex.jpg) no-repeat top / cover;
+        margin: 0.4em;
+    }
+
+    &__content{
+        padding: 0.4em;
+        margin: 0.8em;
+        background:rgb(197, 194, 194);
+        align-items: center;
+        text-align: center;
+    }
+
+    &__desc{
+        
+        flex: 1;
+        font-size: 1.6em;
+        color: grey;
+        text-align:justify;
+        margin: 0.4em;
+        
+
+    }
+
+    
+    &__btn{
+        background: rgb(187, 81, 10);
+        color: white;
+        text-decoration: none;
+        padding: .5em 1em;
+        border-radius: .5em;
+        display:inline-block;
+        margin-top: 0.4em;
+        margin-bottom:0.625rem;
+
+        &:hover {
+            background: rgb(233, 201, 19);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+
+    .index{
+        flex-flow: wrap;
+    }
+
+    .quienessomos{
+        font-size: 1.1em;
+        align-content: center;
+        margin-right: 1em;
+    }
+
+    .contenedor__principal{
+        flex-flow: wrap;
+        align-items: center;
+    }
+    .card{
+        
+        align-items: center;
+        align-content: center;
+        &__desc{
+            font-size: 0.4em;
+        }
+        &__btn{
+            margin:0;
+            
+        }
+
+
+    }
+}
+
