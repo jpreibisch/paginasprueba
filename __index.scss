@@ -3,17 +3,32 @@
     flex-direction:column;
     flex-flow: wrap;
     align-items: center;
-    background: url("..imagenes/fondohero.jpg") no-repeat center / cover;
+    background: url("../imagenes/fondohero.jpg") no-repeat center / cover;
     height: 40vh;
 }
 
 .index{
-    display: flex;
-    flex-direction: column;
-    flex-flow: nowrap;
-    justify-content: space-between;
-    margin:1em;
-    padding: 1em;
+    display: grid;
+    grid-template-columns: fit-content;
+    grid-template-rows: fit-content;
+    grid-template-areas: "h h h h"
+                         "g g g g"
+                         "m m d d" 
+                         "o o o o"
+                         "c c c c";
+    .h {grid-area: h;}
+    .g {grid-area: g;}
+    .m {grid-area: m;}
+    .d {grid-area: d;}
+    .o {grid-area: o;}
+    .c {grid-area: c;}
+    
+    
+    //flex-direction: column;
+    //flex-flow: nowrap;
+    //justify-content: space-between;
+    
+    
 }
 
 .quienessomos{
@@ -23,6 +38,7 @@
     justify-content:stretch;
     font-weight: bold;
     font-size: 2.5em;
+    
 
     &__resaltadas{
         color:black;
@@ -46,23 +62,29 @@
     display: flex;
     flex-direction:column;
     flex-flow: wrap;
-    justify-content:center;
-    margin: 1em;
-    padding: 0.5em;
+    padding: 1em;
+    gap: 1em;
     box-shadow: 0 10px 25px -10px black;
+    margin-bottom: 0.5em;
+    
 
     &__titulo{
         font-size: 2.2em;
         color: indigo;
-        padding-right: 0.4em;
+        margin-left: 3em;
+        margin-bottom: 0.5em;
     }
-    &__lista{
-        display: flex;
-        flex-direction: column;
+    &__lista {
+        //display: flex;
+        //flex-direction: column;
+        //flex-flow: wrap;
         color: black;
         font-size: 1.2em;
-        align-items:center;
         text-align: center;
+        align-items: center;
+        padding:0.5em;
+        
+        
     
     }
 }
@@ -72,8 +94,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 1em;
     padding: 0.3em;
+    
     
 }
 
@@ -83,9 +105,11 @@
     flex-direction: row;
     flex-flow: nowrap;
     justify-content: space-between;
+    
 }
+
 .card{
-    margin:1em;
+    
     padding: 2em;
     display:flex;
     flex-flow: column;
@@ -104,14 +128,14 @@
     &__img1{
         width: 100%;
         flex-basis: 12.5rem;
-        background: url("..imagenes/desarrolloweb.jpg") no-repeat center / cover;
+        background: url("../imagenes/desarrolloweb.jpg") no-repeat center / cover;
         margin: 0.4em;
     }
 
     &__img2{
         width: 100%;
         flex-basis:12.5rem;
-        background: url("..imagenes/comercialindex.jpg") no-repeat top / cover;
+        background: url("../imagenes/comercialindex.jpg") no-repeat top / cover;
         margin: 0.4em;
     }
 
@@ -155,13 +179,26 @@
 @media only screen and (max-width: 320px){
 
     .index{
+        display: flex;
         flex-flow: wrap;
+        flex-direction: column;
+        
+        
     }
-
     .quienessomos{
         font-size: 1.1em;
         align-content: center;
         margin-right: 1em;
+        flex-flow: wrap;
+    }
+
+    .razones{
+        flex-flow: wrap;
+        font-size: 1em;
+        &__titulo{
+            margin-left:2em;
+            margin-top: 1em;
+        }
     }
 
     .contenedor__principal{

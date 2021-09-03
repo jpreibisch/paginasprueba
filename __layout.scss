@@ -1,3 +1,7 @@
+body{
+    margin:1em;
+}
+
 header {
 	position: sticky;
 	top: 0;
@@ -21,14 +25,16 @@ header {
 .menu{
     display: flex;
     flex-direction: row;
+    align-content: center;
     flex-flow: nowrap;
-    align-items: flex-end;
+    align-items: center;
     font-size: 0.8em; 
     font-weight:lighter;
-    background-color: gray;
+    background-color:$color; 
     gap: .7em;
     list-style-type:none;
-    padding: 0.625em;
+    padding:0.5em;
+    padding-bottom: 0.6em;
     
         &__enlace {
         padding: .7em;
