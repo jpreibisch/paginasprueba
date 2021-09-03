@@ -298,6 +298,10 @@ header {
   grid-area: c;
 }
 
+.razonesDiv {
+  text-align: center;
+}
+
 .quienessomos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +357,6 @@ header {
 .razones__titulo {
   font-size: 2.2em;
   color: indigo;
-  margin-left: 3em;
   margin-bottom: 0.5em;
 }
 
@@ -502,10 +505,6 @@ header {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
     font-size: 1em;
-  }
-  .razones__titulo {
-    margin-left: 2em;
-    margin-top: 1em;
   }
   .contenedor__principal {
     -ms-flex-flow: wrap;
