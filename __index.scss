@@ -31,34 +31,50 @@
     
 }
 
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+
 .razonesDiv{
     
     text-align: center;
     
 }
 
+
+
 .quienessomos{
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content:stretch;
+    //display: flex;
+    //flex-direction: row;
+    //flex-flow: wrap;
+   // justify-content:stretch;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2.2em;
+    text-align: left;
+    
+    
+    
     
 
     &__resaltadas{
         color:black;
         font-weight: bolder;
-        font-size: 2em;
+        font-size: 1.8em;
+        max-width: 50%;
+        margin-right: 0.3em;
+        color: $colortitulo;
+        
     }
    
     &__parrafo{
-        text-align:left;
-        align-content:left;
-        align-items: left;
-        max-width: 70%;
+        
+        max-width: 90%;
         color: rgb(1, 6, 12);
         font-weight:normal;
+        
     
 
     }
@@ -69,7 +85,6 @@
     flex-direction:column;
     flex-flow: wrap;
     padding: 1em;
-    gap: 1em;
     box-shadow: 0 10px 25px -10px black;
     margin-bottom: 0.5em;
     
@@ -187,8 +202,14 @@
         display: flex;
         flex-flow: wrap;
         flex-direction: column;
+     
         
-        
+    }
+
+    .mainIndex{
+        display: flex;
+        flex-flow: wrap;
+        flex-direction:column;
     }
     .quienessomos{
         font-size: 1.1em;
@@ -197,7 +218,6 @@
         flex-flow: wrap;
     }
 
-    
 
     .razones{
         flex-flow: wrap;
