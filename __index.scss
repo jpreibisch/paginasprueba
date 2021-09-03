@@ -3,7 +3,7 @@
     flex-direction:column;
     flex-flow: wrap;
     align-items: center;
-    background: url("../imagenes/fondohero.jpg") no-repeat center / cover;
+    background: url("imagenes/fondohero.jpg") no-repeat center / cover;
     height: 40vh;
 }
 
@@ -104,14 +104,14 @@
     &__img1{
         width: 100%;
         flex-basis: 12.5rem;
-        background: url("../imagenes/desarrolloweb.jpg") no-repeat center / cover;
+        background: url("imagenes/desarrolloweb.jpg") no-repeat center / cover;
         margin: 0.4em;
     }
 
     &__img2{
         width: 100%;
         flex-basis:12.5rem;
-        background: url("../imagenes/comercialindex.jpg") no-repeat top / cover;
+        background: url("imagenes/comercialindex.jpg") no-repeat top / cover;
         margin: 0.4em;
     }
 
