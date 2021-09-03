@@ -68,23 +68,20 @@ header {
       align-content: center;
   -ms-flex-flow: nowrap;
       flex-flow: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: lighter;
   background-color: rgba(1, 1, 1, 0.3);
-  gap: .7em;
+  gap: 1.7em;
   list-style-type: none;
   padding: 0.5em;
-  padding-bottom: 0.6em;
+  text-align: center;
 }
 
 .menu__enlace {
   padding: .7em;
   text-decoration: none;
   color: #080700;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .menu__enlace:hover {
@@ -321,7 +318,11 @@ header {
 .quienessomos {
   font-weight: bold;
   font-size: 2.2em;
-  text-align: left;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3em;
 }
 
 .quienessomos__resaltadas {
@@ -349,6 +350,10 @@ header {
           flex-direction: column;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   padding: 1em;
   -webkit-box-shadow: 0 10px 25px -10px black;
           box-shadow: 0 10px 25px -10px black;
@@ -358,7 +363,7 @@ header {
 .razones__titulo {
   font-size: 2.2em;
   color: indigo;
-  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 .razones__lista {

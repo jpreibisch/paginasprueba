@@ -54,7 +54,9 @@
    // justify-content:stretch;
     font-weight: bold;
     font-size: 2.2em;
-    text-align: left;
+    text-align: center;
+    align-items: center;
+    margin-top: 3em;
     
     
     
@@ -85,6 +87,8 @@
     display: flex;
     flex-direction:column;
     flex-flow: wrap;
+    align-items: center;
+    text-align: center;
     padding: 1em;
     box-shadow: 0 10px 25px -10px black;
     margin-bottom: 0.5em;
@@ -93,7 +97,8 @@
     &__titulo{
         font-size: 2.2em;
         color: indigo;
-        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        
     }
     &__lista {
         //display: flex;
