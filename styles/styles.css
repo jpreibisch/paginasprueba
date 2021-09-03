@@ -179,6 +179,7 @@ header {
   font-size: 1.2em;
   gap: .5em;
   display: inline;
+  margin-top: 0.8em;
 }
 
 @media only screen and (max-width: 450px) {
@@ -232,7 +233,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/imagenes/fondohero.jpg) no-repeat center/cover;
+  background: url("..imagenes/fondohero.jpg") no-repeat center/cover;
   height: 40vh;
 }
 
@@ -342,7 +343,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0.8em;
+  margin: 1em;
   padding: 0.3em;
 }
 
@@ -395,7 +396,7 @@ header {
   width: 100%;
   -ms-flex-preferred-size: 12.5rem;
       flex-basis: 12.5rem;
-  background: url(/imagenes/desarrolloweb.jpg) no-repeat center/cover;
+  background: url("..imagenes/desarrolloweb.jpg") no-repeat center/cover;
   margin: 0.4em;
 }
 
@@ -403,7 +404,7 @@ header {
   width: 100%;
   -ms-flex-preferred-size: 12.5rem;
       flex-basis: 12.5rem;
-  background: url(/imagenes/comercialindex.jpg) no-repeat top/cover;
+  background: url("..imagenes/comercialindex.jpg") no-repeat top/cover;
   margin: 0.4em;
 }
 
