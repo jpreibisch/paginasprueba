@@ -1,0 +1,33 @@
+.colorFondo{
+    background:url(/imagenes/clientes.jpg) center 30%;
+    margin:0;
+    padding: 0;
+}
+
+.contenedor-marcas{
+   
+    display: flex;
+    flex-direction:column;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    padding: 12em;
+ 
+}
+
+
+.titulo-portfolio{
+    padding-top: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 10em;
+    color: white;
+    
+
+}
+
+.conocelos{
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+    
+}

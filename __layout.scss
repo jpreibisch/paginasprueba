@@ -25,21 +25,20 @@ header {
 .menu{
     display: flex;
     flex-direction: row;
-    align-content: center;
-    flex-flow: nowrap;
-    font-size: 0.9em; 
+    flex-flow:nowrap;
+    font-size: .9em; 
     font-weight:lighter;
     background-color:$color; 
-    gap: 1.7em;
+    gap: 1.5em;
     list-style-type:none;
-    padding:0.5em;
-    text-align: center;
+    
     
         &__enlace {
-        padding: .7em;
         text-decoration: none;
         color: rgb(8, 7, 0); 
-        gap: 1.5em;
+        padding:0.5em;
+        
+
         &:hover {
             transform: 2px;
             color: whitesmoke;
@@ -108,6 +107,8 @@ header {
 
 /*Footer*/
 
+
+
 .container__redes  ul, li, a {
     font-weight: bolder;
     text-decoration:none;
@@ -117,9 +118,36 @@ header {
     gap: .5em;
     display: inline;
     margin-top: 0.8em;
+    padding-top: 0.8em;
+    align-items: center;
+    
     }
 
+
+.contenedorRedes{
     
+    background-color:$color;
+    display: flex;
+    flex-direction:column;
+    flex-flow:wrap;
+    justify-content: space-between;
+    color: black;
+    list-style-type: none;
+    margin: 0;
+    &__direccion{
+        display: flex;
+        flex-direction: column;
+        flex-flow:column;
+        padding: 0.2em;
+        margin:0;
+        font-weight: lighter;
+        text-decoration:wavy;
+    }
+}
+
+
+
+
 
 @media only screen and (max-width: 450px) {
 
@@ -133,7 +161,7 @@ header {
         font-size: 0.5em;
         
     }
-} 
+
 
 .contenedorRedes{
     display: flex;
@@ -144,4 +172,6 @@ header {
     padding-left: 2em;
     padding-right: 2em;
     background: grey;
+    font-size: 0.5em;
+    }
 }

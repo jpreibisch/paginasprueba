@@ -9,30 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="index">
-    <header class="h">
+<body>
+    <header>
         <div class="logo">
             <img src="imagenes/Jacquie.jpg" alt="logo">
         </div>
         <nav>
-            <label for="menu-dropdown"class="menu menu__sm">
+            <label for="menu-dropdown"class="menu__sm">
                 <span class="iconify" data-icon="heroicons-solid:menu" data-inline="false"></span>
             </label>
             <input type="checkbox" id="menu-dropdown" hidden>
-            <ul class="menu menu__md">
-                <li>
-                    <li><a class="menu__enlace"  href="/index.html">Home</a></li>
-                    <li><a class= "menu__enlace" href="/portfolio.html">Portfolio</a></li>
-                    <li><a class= "menu__enlace"  href="/contacto.html">Contacto</a></li>
-                </li>
+            <ul class="menu__md">
+                    <li class="menu__enlace"><a class="menu__enlace"  href="/index.html">Home</a></li>
+                    <li class="menu__enlace"><a class= "menu__enlace" href="/portfolio.html">Portfolio</a></li>
+                    <li class="menu__enlace"><a class= "menu__enlace"  href="/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="index">
 
-        <div class="g hero__container"></div>
-        <div class=" mainIndex m d" >
-            <div class="m quienessomos animate__animated animate__pulse">
+        <div class="hero__container"></div>
+        <div class=" mainIndex" >
+            <div class=" quienessomos animate__animated animate__pulse">
                 <p class="quienessomos__parrafo"> Somos una</p> 
                 <p class="quienessomos__resaltadas"> AGENCIA</p>
                 <p class="quienessomos__parrafo"> independiente de profesionales dedicados a brindar</p>
@@ -41,9 +39,10 @@
             </div>
         
 
-            <div class="d razonesDiv">
-                <h2 class="razones__titulo">¿Porque elegirnos?</h2>
-                    <ul class=" razones razones__lista">
+            <div class="razonesDiv">
+                
+                    <ul class="razones">
+                        <h2 class="razones__titulo">¿Porque elegirnos?</h2>
                         <li class="razones__lista">
                             <a href="">
                                 <span class="iconify" data-icon="et:cloud"></a> Trabajamos de forma seria y responsable</li>
@@ -83,12 +82,12 @@
             </div>
         </div>
     </main>
-    <footer class="c">
+    <footer>
         <div class= "contenedorRedes">
-            <div>
-                <address>
-                Bs As, Argentina - Atencion de 8 a 24hs todos los dias del año.
-                </address>
+            <div class="contenedorRedes__direccion">
+            <p>Bs As, Argentina - Atencion de 8 a 24hs todos los dias del año.</p>
+            <p>Mail: jacqueline.preibisch@gmail.com.</p>
+            <p>Movil: +549-11-36292542</p>
             </div>
             <ul class="container__redes">
                 <li><a href="#">

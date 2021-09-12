@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles/styles.css">
     
 </head>
@@ -15,26 +16,31 @@
             <img src="/imagenes/Jacquie.jpg" alt="">
         </div>
         <nav>
-            <ul class="menu">
+            <label for="menu-dropdown"class="menu__sm">
+                <span class="iconify" data-icon="heroicons-solid:menu" data-inline="false"></span>
+            </label>
+            <input type="checkbox" id="menu-dropdown" hidden>
+            <ul class="menu__md">
                 <li>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/portfolio.html">portfolio</a></li>
-                    <li><a href="/contacto.html">Contacto</a></li>
+                    <li class="menu__enlace"><a class="menu__enlace" href="/index.html">Home</a></li>
+                    <li class="menu__enlace"><a class="menu__enlace" href="/portfolio.html">Portfolio</a></li>
+                    <li class="menu__enlace"><a class="menu__enlace" href="/contacto.html">Contacto</a></li>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Clientes que confian en nosotros:</h1>
-        <div>
-            <img src="" alt="">
+    <main class="colorFondo">
+        <h1 class="titulo-portfolio animate__animated animate__pulse">Clientes que CONFIAN en nosotros:</h1>
+        <div class="contenedor-marcas">
+            <a class="conocelos animate__animated animate__pulse" href="../DESARROLLO WEB/BALANZE/index.html">Conocelos</a>
         </div>
     </main>
     <footer>
-        <div>
-            <address>
-                Bs As, Argentina.
-            </address>
+        <div class="contenedorRedes">
+        <div class="contenedorRedes__direccion">
+                <p>Bs As, Argentina.</p>
+                <p>Mail: jacqueline.preibisch@gmail.com.</p>
+                <p> Movil: +549-11-36292542</p>
         </div>
         <ul class="container__redes">
             <li><a href="#">
@@ -50,6 +56,7 @@
                 </a>
             </li>
         </ul>
+        </div>
     </footer>
 </body>
 </html>
